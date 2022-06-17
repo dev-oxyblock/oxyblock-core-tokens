@@ -1,2 +1,3 @@
-# oxyblock-core-tokens
-Modern CSS Framework based on Oxyblock UI
+# Oxyblock Core Tokens
+
+Oxyblock Core is a modern CSS Framework based on Oxyblock UI.
