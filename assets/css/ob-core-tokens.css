@@ -1,6 +1,6 @@
 /**
  * Oxyblock Core - Modern CSS Framework based on Oxyblock UI
- * Version: v0.1.4
+ * Version: v0.2.0
  * Website: https://core.oxyblock.xyz
  * License: MIT
  */
@@ -98,8 +98,6 @@
   --ob-size-72: calc( var(--ob-size-unit) * 28.8 );
   --ob-size-80: calc( var(--ob-size-unit) * 32 );
   --ob-size-96: calc( var(--ob-size-unit) * 38.4 );
-  --ob-size-0: 0rem;
-  --ob-size-none: none;
   --ob-size-screen-lg: calc(var(--ob-breakpoints-lg) + 1px);
   --ob-size-screen-md: calc(var(--ob-breakpoints-md) + 1px);
   --ob-size-screen-sm: calc(var(--ob-breakpoints-sm) + 1px);
@@ -312,7 +310,8 @@
 }
 
 html{font-size:var(--ob-text-base-size)}
-body{font-size:var(--ob-text-base);color:var(--ob-black-emph-high)}
+body{background-color:var(--ob-body-light);font-size:var(--ob-text-base);color:var(--ob-black-emph-high)}
+[data-theme=dark] body{background-color:var(--ob-body-dark)}
 
 :root, [data-theme=default] {
   --ob-white: hsl(var(--ob-white-h), var(--ob-white-s), var(--ob-white-l));
@@ -324,7 +323,7 @@ body{font-size:var(--ob-text-base);color:var(--ob-black-emph-high)}
   --ob-white-emph-low: hsla(var(--ob-white-emph-h), var(--ob-white-emph-s), var(--ob-white-emph-l), 0.55);
   --ob-black-emph-high: hsla(var(--ob-black-emph-h), var(--ob-black-emph-s), var(--ob-black-emph-l), 1);
   --ob-black-emph-medium: hsla(var(--ob-black-emph-h), var(--ob-black-emph-s), var(--ob-black-emph-l), 0.6);
-  --ob-black-emph-low: hsla(var(--ob-black-emph-h), var(--ob-black-emph-s), var(--ob-black-emph-l), 0.55);
+  --ob-black-emph-low: hsla(var(--ob-black-emph-h), var(--ob-black-emph-s), var(--ob-black-emph-l), 0.4);
   --ob-primary-50: hsl(var(--ob-primary-h), var(--ob-primary-s), var(--ob-primary-l-50));
   --ob-primary-100: hsl(var(--ob-primary-h), var(--ob-primary-s), var(--ob-primary-l-100));
   --ob-primary-200: hsl(var(--ob-primary-h), var(--ob-primary-s), var(--ob-primary-l-200));
